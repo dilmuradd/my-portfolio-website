@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    color: white;
+}
+.css-shadow{
+    transition: all 0.2s linear;
+
+}
+.css-shadow:hover{
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 3px 15px 0px;
+}
+.drw-shadow{
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 3px 15px 0px;
+
+}
+/* globals.css */
+@keyframes shake {
+    0%, 100% {
+      transform: rotate(0deg); /* Dastlabki va oxirgi holatlar */
+    }
+    25% {
+      transform: rotate(10deg); /* 25% holatda */
+    }
+    50% {
+      transform: rotate(-10deg); /* 50% holatda */
+    }
+    75% {
+      transform: rotate(10deg); /* 75% holatda */
+    }
+  }
+  
+  .shake {
+    animation: shake 2s linear infinite; /* Shake animatsiyasi */
+  }
+
+.father__box:hover{
+background: rgba(73, 2, 73, 0.323);
+}
+
+.father__box:hover .image__1{
+  border-bottom: 2px solid white;
+}
+  .opac-css{
+    animation: opac 5s linear infinite; 
+  }
+
+  @keyframes opac {
+    0%, 100% {
+      opacity: 0.5; /* Dastlabki va oxirgi holatlar */
+    }
+    25% {
+      opacity: 1; /* 25% holatda */
+    }
+    50% {
+      opacity: 0.5; /* 50% holatda */
+    }
+    75% {
+      opacity: 1; /* 75% holatda */
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .button_icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      width: 100%;
+    }
+    .btn1{
+      width: 100%;
+    }
+    .w-btn{
+      width: 100%;
+    }
+    .ism-text{
+      font-size: 20px;
+      text-align: center;
+    }
+    .lorem-text{
+      font-size: 12px;
+      text-align: center;
+    }
+    .title-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .rasm-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .font-t{
+      text-align: center;
+    }
+  }
