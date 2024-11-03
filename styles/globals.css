@@ -99,3 +99,12 @@ background: rgba(73, 2, 73, 0.323);
       text-align: center;
     }
   }
+
+
+  .father-top:hover .Timg{
+scale: 1.1;
+  }
+  .Timg{
+    transition: all 0.1s linear;
+
+  }

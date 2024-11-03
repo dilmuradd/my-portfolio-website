@@ -19,7 +19,7 @@ const Header = () => {
 
 <div className='flex items-center gap-2'>
   <div className='p-[10px] sm:block hidden hover:bg-gray-800 rounded-lg transition-all hover:text-green-600 hover:backdrop-blur-xl ' >
-<Link className='' href={'#'}>About</Link>
+<Link  href={'/about'}>About</Link>
   </div>
 
   <div className='p-[10px] sm:block hidden hover:bg-gray-800 rounded-lg  transition-all hover:text-orange-600 hover:backdrop-blur-xl ' >

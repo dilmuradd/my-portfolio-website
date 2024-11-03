@@ -31,7 +31,7 @@ const DynamicPageBlog = () => {
   }, [id]);
 
   if (loading) return <div className='text-center min-h-[100vh] py-10'>
-    <div className='m-auto max-w-[800px]'>
+    <div className='m-auto max-w-[800px] px-[10px]'>
 
     <Skeleton className='h-[60px] rounded-xl ' baseColor='#070b20' />
     <Skeleton className='h-[300px] rounded-xl mt-[30px] ' baseColor='#070b20' />
