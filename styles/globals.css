@@ -3,6 +3,9 @@
 @tailwind utilities;
 *{
     color: white;
+    /* user-select: none; /* Chrome, Safari, Opera */
+    /* -moz-user-select: none; Firefox */
+    /* -ms-user-select: none; Internet Explorer/Edge */ 
 }
 .css-shadow{
     transition: all 0.2s linear;
@@ -108,3 +111,7 @@ scale: 1.1;
     transition: all 0.1s linear;
 
   }
+
+
+
+  

@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "./Componets/Footer/Footer";
 export default function App({ Component, pageProps }) {
-  
+
 
   return (
   <BlogApiProvider>
