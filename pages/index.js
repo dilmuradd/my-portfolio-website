@@ -11,7 +11,7 @@ const Index = () => {
         {/* Title and Description for SEO */}
         <title>DSH - Portfolio va Blog</title>
         <meta name="description" content="Dilmurod Sharipovning shaxsiy portfolio va blog sayti. Men o'zim bilgan narsalar va yangi yangiliklar haqida yozib boraman." />
-
+        <meta name="google-site-verification" content="-2fv1HDBgh-BgUfKJ9COATKa2xVK8C_DkN_mo1-aJlc" />
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Dilmurod Sharipov - Portfolio va Blog" />
         <meta property="og:description" content="Dilmurod Sharipovning shaxsiy portfolio va blog sayti. Men o'zim bilgan narsalar va yangi yangiliklar haqida yozib boraman." />
