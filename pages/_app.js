@@ -3,6 +3,7 @@ import { ProjectProvider } from "@/Context/ProjectContextApi";
 import "@/styles/globals.css";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "./Componets/Footer/Footer";
+import Head from "next/head";
 export default function App({ Component, pageProps }) {
 
 

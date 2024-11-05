@@ -52,16 +52,16 @@ Project
       key={4}
       open={isOpen}
       onClose={toggleDrawer}
-      direction='right'
-      className='drw-shadow h-[100vh]'
+      direction='top'
+      className='drw-shadow '
       style={{ backgroundColor: '#0c121e' }}
     >
       <div className='p-4'>
-        <nav className='flex flex-col items-start justify-start space-y-2'>
-          <Link href="/" className='text-blue-400 font-semibold text-[28px] hover:text-blue-600'>Home</Link>
-          <Link href="/about" className='text-blue-400 font-semibold text-[28px] hover:text-blue-600'>About</Link>
-          <Link href="/blog" className='text-blue-400 font-semibold text-[28px] hover:text-blue-600'>Blog</Link>
-          <Link href="/project" className='text-blue-400 font-semibold text-[28px] hover:text-blue-600'>Project</Link>
+        <nav className='flex flex-col items-start gap-[10px] justify-start space-y-2'>
+          <Link href="/" className='text-white font-semibold text-[20px] hover:text-blue-600'>Home</Link>
+          <Link href="/about" className='text-white font-semibold text-[20px] hover:text-blue-600'>About</Link>
+          <Link href="/blog" className='text-white font-semibold text-[20px] hover:text-blue-600'>Blog</Link>
+          <Link href="/project" className='text-white font-semibold text-[20px] hover:text-blue-600'>Project</Link>
         </nav>
       </div>
     </Drawer>

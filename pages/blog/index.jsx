@@ -3,10 +3,33 @@ import Header from '../Componets/Header/Header'
 import { BlogApiContext } from '@/Context/BlogContextApi'
 import Skeleton from 'react-loading-skeleton'
 import Link from 'next/link'
+import Head from 'next/head'
 const Blog = () => {
   let {BlogNews} = useContext(BlogApiContext)
   return (
     <section className='min-h-[100vh] m-auto pt-[130px] max-w-[800px]'>
+      <Head>
+  <title>Dilmurod Sharipov - Blog</title>
+  <meta name="description" content="Dilmurod Sharipovning blog sahifasi. Dasturlash, web dizayn va yangi texnologiyalar haqida maqolalar." />
+  
+  <meta property="og:title" content="Dilmurod Sharipov - Blog" />
+  <meta property="og:description" content="Dilmurod Sharipovning blog sahifasi. Dasturlash, web dizayn va yangi texnologiyalar haqida maqolalar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shd-brown.vercel.app/blog" />
+  <meta property="og:image" content="https://img.freepik.com/premium-photo/cup-coffee-sits-pink-table_954894-213888.jpg?semt=ais_hybrid" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dilmurod Sharipov - Blog" />
+  <meta name="twitter:description" content="Dilmurod Sharipovning blog sahifasi. Dasturlash, web dizayn va yangi texnologiyalar haqida maqolalar." />
+  <meta name="twitter:image" content="https://img.freepik.com/premium-photo/cup-coffee-sits-pink-table_954894-213888.jpg?semt=ais_hybrid" />
+
+  <meta name="author" content="Dilmurod Sharipov" />
+  <meta name="keywords" content="Dilmurod Sharipov, Blog, Dasturlash, Web Dizayn, Frontend, Backend, JavaScript, HTML, CSS, Texnologiyalar, O'zbekcha Blog" />
+  
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shd-brown.vercel.app/blog" />
+</Head>
+
       <Header/>
       <h1 className='font-semibold pl-[10px] text-[28px] text-blue-600'>
           Blog

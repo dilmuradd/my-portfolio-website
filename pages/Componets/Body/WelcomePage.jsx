@@ -8,7 +8,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import user from '../../../image/depositphotos_318367382-stock-photo-portrait-of-a-handsome-young.jpg'
+import user from '../../../image/user_3307761_1712841557.jpg'
+// import user from '../../../image/depositphotos_318367382-stock-photo-portrait-of-a-handsome-young.jpg'
 import WelcomeBlog from './WelcomeBlog/WelcomeBlog';
 import TopProjectDemo from './TopProjectDemo';
 const WelcomePage = () => {

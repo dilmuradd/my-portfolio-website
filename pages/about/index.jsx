@@ -11,9 +11,39 @@ import { MdOutlineMail } from "react-icons/md";
 import Skills from './Skills'
 import { PiReadCvLogoLight } from "react-icons/pi";
 import Software from './Software'
+import Head from 'next/head'
 const index = () => {
   return (
     <section className='min-h-[100vh] m-auto max-w-[800px] pt-[130px]'>
+
+
+<Head>
+  {/* Title and Description for SEO */}
+  <title>Dilmurod Sharipov - About Me</title>
+  <meta name="description" content="Dilmurod Sharipov haqida. Men dasturchiman va web dizayn sohasida tajribam bor." />
+  
+  {/* Open Graph Meta Tags */}
+  <meta property="og:title" content="Dilmurod Sharipov - About Me" />
+  <meta property="og:description" content="Dilmurod Sharipov haqida. Men dasturchiman va web dizayn sohasida tajribam bor." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shd-brown.vercel.app/about" />
+  <meta property="og:image" content="https://img.freepik.com/premium-photo/cup-coffee-sits-pink-table_954894-213888.jpg?semt=ais_hybrid" />
+  
+  {/* Twitter Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dilmurod Sharipov - About Me" />
+  <meta name="twitter:description" content="Dilmurod Sharipov haqida. Men dasturchiman va web dizayn sohasida tajribam bor." />
+  <meta name="twitter:image" content="https://img.freepik.com/premium-photo/cup-coffee-sits-pink-table_954894-213888.jpg?semt=ais_hybrid" />
+
+  {/* Additional SEO Meta Tags */}
+  <meta name="author" content="Dilmurod Sharipov" />
+  <meta name="keywords" content="Dilmurod Sharipov, About, Dasturchi, Web Dizayner, O'zbekiston, IT, Texnologiyalar, Frontend Developer, Backend Developer, Portfolio" />
+  
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://shd-brown.vercel.app/about" />
+</Head>
+
+
         <Header/>
       <div>
         <h1 className='font-semibold pl-[10px] text-[28px] text-purple-600'>
