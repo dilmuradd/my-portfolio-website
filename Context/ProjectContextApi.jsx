@@ -16,7 +16,6 @@ let GetData = async()=>{
     }
 }
 useEffect(()=>{GetData()},[])
-console.log(getProjectData);
     return(
         <ProjectContext.Provider value={{getProjectData}}>
             {children}

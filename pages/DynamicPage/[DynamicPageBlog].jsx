@@ -5,6 +5,7 @@ import Header from '../Componets/Header/Header';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import Link from 'next/link';
 const DynamicPageBlog = () => {
   const { query } = useRouter();
   const id = query.DynamicPageBlog;
@@ -48,9 +49,11 @@ let router = useRouter()
     <div>
       <Header />
       <div className='min-h-[100vh] pt-[120px] max-w-[800px] mx-auto px-4'>
+        <Link href={'/blog'}>
         <h1 className='text-purple-600 hover:opacity-75 transition-all mb-4'>
           <FaArrowLeftLong className='inline-block text-purple-600 font-bold' /> Blog Sahifaga qaytish
         </h1>
+        </Link>
         <div className='bg-[#070b20] rounded-lg shadow-md p-6'>
           <h1 className='font-bold text-[32px] md:text-[34px] mb-2'>{isObjectData.title}</h1>
           <p className='font-mono text-gray-500 mb-4'>{isObjectData.time}</p>

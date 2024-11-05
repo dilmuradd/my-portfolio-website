@@ -9,13 +9,15 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import Skills from './Skills'
+import { PiReadCvLogoLight } from "react-icons/pi";
+import Software from './Software'
 const index = () => {
   return (
     <section className='min-h-[100vh] m-auto max-w-[800px] pt-[130px]'>
         <Header/>
       <div>
         <h1 className='font-semibold pl-[10px] text-[28px] text-purple-600'>
-          Men Haqimda
+          About
         </h1>
         <div className='mt-[20px] px-[10px] items-center justify-start gap-[10px] flex'>
         <p className='sm:text-[16px] text-[14px]' >
@@ -28,6 +30,9 @@ const index = () => {
         <p className='px-[10px] sm:text-[16px] text-[14px]'>
         Men har bir detalga e'tibor beraman va ko‘rkam, qulay hamda texnik xizmat ko‘rsatish oson bo‘lgan dasturlar ishlab chiqishga qiziqaman. Har bir loyiha orqali o‘z ko‘nikmalarimni rivojlantirib, eng yuqori sifatli veb-saytlarni taqdim etishga intilaman.
         </p>
+        <a href="https://drive.google.com/file/d/1_hyS7YLD53jz1J3XYSYofCCZ1v_IGF3s/view" target='_blank'>
+        <button className=' flex items-center justify-center gap-[10px] hover:bg-blue-950 transition-all ml-[10px] mt-[20px] py-[5px] px-[10px] bg-blue-900 rounded-lg'>Resume <PiReadCvLogoLight /></button>
+        </a>
 
 <div className='flex items-center px-[10px] mt-[20px] sm:mt-[40px] justify-center'>
   <Image className='w-full rounded-xl h-[200px] sm:h-[300px] object-cover' src={wp} alt='bg'/>
@@ -35,7 +40,7 @@ const index = () => {
 <p className='text-center text-[12px] mt-[6px] font-mono'>Pixel-Perfect, Gif</p>
 
 
-<div className='pl-[10px]'>
+<div className='p-[10px]'>
   <p className='sm:text-[16px] text-[14px] mt-[30px]'>
   Ochiq manba loyihalarida faol qatnashishni yoqtiraman.  <a className='text-blue-400 opac-css hover:text-blue-600 transition-all'  href="https://github.com/dilmuradd" target='_blank'>GitHub</a> sahifamda turli veb-saytlar va ilovalarim mavjud.
   </p>
@@ -74,16 +79,20 @@ const index = () => {
 
 
         </div>
-<div>
+<div className='flex items-center justify-between px-[10px]'>
 <h1 className='font-semibold mt-[40px] text-[28px] text-purple-600'>
 Ko‘nikmalar
         </h1>
-
 </div>
+
 </div>
 <Skills/>
 
       </div>
+      <h1 className='font-semibold pl-[20px] text-[28px] text-purple-600'>
+Software
+</h1>
+<Software/>
     </section>
   )
 }

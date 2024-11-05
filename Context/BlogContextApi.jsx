@@ -17,7 +17,6 @@ let BlogData = async ()=>{
   useEffect(() => {
     BlogData()
   }, []);
-console.log(BlogNews);
   return (
     <BlogApiContext.Provider value={{ BlogNews, setBlogNews }}>
       {children}

@@ -12,7 +12,7 @@ const Skills = () => {
  
 
   return (
-    <div className=" mt-[20px] relative  grid grid-cols-2 mb-[90px] p-[10px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+    <div className=" mt-[20px] relative  grid grid-cols-2 mb-[40px] p-[10px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
       <div className='border flex-shrink-0 flex items-center justify-center gap-[8px] hover:bg-orange-950 hover:border-orange-900 transition-all rounded-lg p-[10px]'>
       <FaHtml5 /> HTML5
       </div>

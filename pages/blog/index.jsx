@@ -1,25 +1,29 @@
+import React, { useContext } from 'react'
+import Header from '../Componets/Header/Header'
 import { BlogApiContext } from '@/Context/BlogContextApi'
-import Link from 'next/link';
-import React, { useContext, useEffect } from 'react'
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
-
-
-const WelcomeBlog = () => {
-  let { BlogNews } = useContext(BlogApiContext) || { BlogNews: [] };
-
+import Skeleton from 'react-loading-skeleton'
+import Link from 'next/link'
+const Blog = () => {
+  let {BlogNews} = useContext(BlogApiContext)
   return (
-    <div>
-      {(!BlogNews || BlogNews.length === 0) ? (
+    <section className='min-h-[100vh] m-auto pt-[130px] max-w-[800px]'>
+      <Header/>
+      <h1 className='font-semibold pl-[10px] text-[28px] text-blue-600'>
+          Blog
+        </h1>
+
+
+        {
+        (!BlogNews || BlogNews.length === 0) ? (
         <div className='px-[20px]'>
           <Skeleton className='mt-[40px]' height={'130px'} baseColor='#070b20'/>
           <Skeleton className='mt-[20px]' height={'130px'} baseColor='#070b20'/>
           <Skeleton className='mt-[20px] mb-[40px]' height={'130px'} baseColor='#070b20'/>
         </div>
       ) : (
-        <div  className='grid grid-cols-1 p-[10px] gap-[10px] mt-[25px]'>
-          {BlogNews.slice(0, 3).map(item => (
-            <Link href={`DynamicPage/${item.id}`} key={item.id} className='h-[140px] pl-[10px] rounded-3xl p-2 father__box transition-all flex items-center gap-4'>
+<div  className='grid grid-cols-1 p-[10px] gap-[10px] mt-[25px]'>
+          {BlogNews.map(item => (
+            <Link href={`DynamicPage/${item.id}`} key={item.id} className='h-[140px]  pl-[10px] rounded-3xl p-2 father__box transition-all flex items-center gap-4'>
               <div className='w-[160px] h-[100px]'>
                 <img className='object-cover w-[160px] h-full max-h-[100px] max-w-[160px] rounded-lg' src={item.img} alt="title-img" />
               </div>
@@ -37,9 +41,10 @@ const WelcomeBlog = () => {
             </Link>
           ))}
         </div>
-      )}
-    </div>
-  );
+      )
+      }
+    </section>
+  )
 }
 
-export default WelcomeBlog;
+export default Blog
